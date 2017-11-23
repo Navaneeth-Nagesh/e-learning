@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning</title>
+</head>
+<link rel="stylesheet" href="../static/about.css">
+
+<body>
+    <h2>About Us</h2>
+    <!--    split screen -->
+
+    <section id="wrapper" class="skewed">
+        <div class="layer bottom">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>Look Sharp</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero reiciendis atque debitis. Sequi at consequatur deserunt?</p>
+                </div>
+                <img src="../static/images/bitcoin.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="layer top">
+            <div class="content-wrap">
+                <div class="content-body">
+                    <h1>Stay Cool</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quisquam temporibus dolore vero reiciendis atque debitis. Sequi at consequatur deserunt?</p>
+                </div>
+                <img src="../static/images/buddism.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="handle"></div>
+    </section>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, officiis, impedit. Unde eius reiciendis beatae facere. Fuga perferendis, corporis ad sequi animi, suscipit eveniet ex minus eaque aut incidunt, doloribus dolores explicabo impedit distinctio at nisi voluptate soluta. Incidunt atque beatae blanditiis quo velit, natus tempore amet debitis. Velit voluptatum quam, eos delectus expedita ex doloribus, magnam harum minima quaerat veritatis odit fugiat vitae sed voluptate autem modi voluptas. Omnis eaque saepe similique commodi perferendis suscipit, nulla natus ipsa cupiditate veritatis sint nam nostrum sapiente et nisi dolorum debitis. Et perferendis dignissimos aperiam cum, pariatur praesentium voluptatum ratione quaerat atque.</p>
+    <a href="#course">course</a>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/script.js" type="text/javascript"></script>
+    <script>
+        //split screen
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            "use strict";
+            let wrapper = document.getElementById('wrapper');
+            let topLayer = wrapper.querySelector('.top');
+            let handle = wrapper.querySelector('.handle');
+            let skew = 0;
+            let delta = 0;
+
+            if (wrapper.className.indexOf('skewed') != -1) {
+                skew = 1000;
+            }
+
+            wrapper.addEventListener('mousemove', function(e) {
+                delta = (e.clientX - window.innerWidth / 2) * 0.5;
+
+                handle.style.left = e.clientX + delta + 'px';
+
+                topLayer.style.width = e.clientX + skew + delta + 'px';
+            });
+        });
+
+    </script>
+</body>
+
+</html>

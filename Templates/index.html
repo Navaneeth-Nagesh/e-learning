@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>E-Learning</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <!--    linked style sheet  -->
+    <link rel="stylesheet" href="../static/style.css">
+    <!--    carousel plugins   #owlcarousel#-->
+    <link rel="stylesheet" href="../static/OwlCarousel-plugins/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/OwlCarousel-plugins/owl.theme.default.min.css">
+    <!--    animation library     #animate.css#-->
+    <link rel="stylesheet" href="../static/js/node_modules/animate.css/animate.min.css">
+    <!--    Font - awesome -->
+     <link rel="stylesheet" href="../static/font-awesome-4.7.0/css/font-awesome.css">
+
+</head>
+
+<body>
+
+    <div id="blur">
+        <div class="coverWrapper">
+                <div class="cover-caption">
+                    <h2 id="coverText">E-learning</h2>
+                </div>
+        </div>
+        <!--        Navigation bar   -->
+        <nav>
+            <div class="header">
+                <div class="header_container">
+                    <ul>
+                        <li><button class="nav-icons" onclick="window.location.href='#course'"><a href="#course-point">Courses</a> </button></li>
+                        <li><button class="nav-icons" onclick="window.location.href='about.html'">About Us <span></span></button></li>
+                        <li class="customised-line"></li>
+                        <li> <button onclick="document.getElementById('login').style.display='block'" id="log" class="nav-icons"> Log In</button></li>
+                        <li><button onclick="document.getElementById('signup').style.display='block'" id="customised-icons">Register</button></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--        cover picture -->
+        <div class="cover-pic"></div>
+
+
+
+        <!--     quotes container -->
+        <h4 class="quote-title"> What Our Students Say </h4>
+
+        <!-- quote next and previous buttons -->
+        <div class="quote-carousel"> <button id="quotePrevBtn"><i class="fa fa-angle-left fa-5x" aria-hidden="true"></i></button>
+            <button id="quoteNextBtn"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></button>
+            <!--      Quote  Carousels    -->
+            <div class="owl-carousel owl-theme owl-loaded owl-quotes">
+
+                <div class="quotes">
+                    <blockquote cite="lorem ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illum nesciunt ipsa perspiciatis reiciendis? Commodi ipsam, maiores illum incidunt labore amet vitae quos ea molestias libero odit accusantium inventore <span>- edward williams</span></blockquote>
+                </div>
+                <div class="quotes">
+                    <blockquote cite="lorem ipsum">
+                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id quam explicabo laboriosam quibusdam qui delectus! Facere, repudiandae, excepturi. Exercitationem deserunt nisi doloribus esse veritatis nesciunt, repellendus praesentium dicta velit pariatur.<span>- edward williams</span> </blockquote>
+                </div>
+                <div class="quotes">
+                    <blockquote cite="lorem ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illum nesciunt ipsa perspiciatis reiciendis? Commodi ipsam, maiores illum incidunt labore amet vitae quos ea molestias libero odit accusantium inventore deserunt.<span>- edward williams</span> </blockquote>
+                </div>
+                <div class="quotes">
+                  
+                    <blockquote cite="lorem ipsum">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio illum nesciunt ipsa perspiciatis reiciendis? Commodi ipsam, maiores illum incidunt labore amet vitae quos ea molestias libero odit accusantium inventore deserunt.<span>- edward williams</span>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+        <!--        line point -->
+        <hr id="course-point">
+
+        <!--     course carousel container  -->
+
+        <section>
+            <h2 id="course">Courses Catologue</h2>
+            <div class="catologue">
+                <!--            header of the course-->
+                <h3 class="course-title">Data Science</h3>
+
+                <!--        Data Science Next and Prev buttons  -->
+                <div class="course-carousel"> <button id="sciencePrevBtn" class=" button-cover carousel-icons"><i class="fa fa-angle-left fa-5x fa-carousel" aria-hidden="true"></i></button>
+                    <button id="scienceNextBtn" class="carousel-icons button-cover"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></button>
+
+                    <!--                Data science Carousel -->
+                    <div class="owl-carousel owl-theme owl-loaded owl-science owl-customize">
+                        <a href="about.html">
+                            <div class="data-catologue">
+
+
+                                <img src="../static/images/machine-learning-image.jpg" class="background-catologue" alt="">
+                                <h4 class="data-title">Machine-Learning</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+
+                            </div>
+                        </a>
+                        <a href="about.html">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/deep-learning.jpg" class="background-catologue" alt="">
+                                <h4 class="data-title">Deep Learning</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/data-science-python.png" class="background-catologue" alt="">
+                                <h4 class="data-title">Applied Data Science With Python</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/statistics-r.jpg" class="background-catologue" alt="">
+                                <h4 class="data-title">Statistics With R</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/Neural-network.jpg" class="background-catologue" alt="">
+                                <h4 class="data-title">Neural Networks For Machine Learning</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/pure-data-science.jpg" class="background-catologue" alt="">
+                                <h4 class="data-title">Pure Data Science</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div class="data-catologue">
+
+                                <img src="../static/images/machine-learning%20with%20python.png" class="background-catologue" alt="">
+                                <h4 class="data-title">Machine-Learning With Python</h4>
+                                <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                                <button class="enrollment">Enroll</button>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--             computer science catalog -->
+        <div class="catologue">
+            <!--           carousel header -->
+            <h3 class="course-title">Computer Science</h3>
+            <!--            carousel button prev and next buttons -->
+
+            <div class="course-carousel"> <button id="computerPrevBtn" class="button-cover carousel-icons"><i class="fa fa-angle-left fa-5x fa-carousel" aria-hidden="true"></i></button>
+                <button id="computerNextBtn" class=" button-cover carousel-icons"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></button>
+                <!--                computer science carousel -->
+                <div class="owl-carousel owl-theme owl-loaded owl-computer-science owl-customize">
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/bitcoin.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Bitcoin Cryptocurrency Technologies</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/android-application.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Android Application</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/cryptocurrency.jpeg" class="background-catologue" alt="">
+                            <h4 class="data-title">Cryptocurrency</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/matlab.png" class="background-catologue" alt="">
+                            <h4 class="data-title">Introduction To MATLAB</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/algorithm.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Algorithms</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/octave.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Octave Programs</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/security-networks.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Security And Networks</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="catologue">
+            <!--           carousel header -->
+            <h3 class="course-title">Social Sciences</h3>
+            <!--            carousel prev and next buttons -->
+            <div class="course-carousel"> <button id="socialPrevBtn" class=" button-cover carousel-icons"><i class="fa fa-angle-left fa-5x fa-carousel" aria-hidden="true"></i></button>
+                <button id="socialNextBtn" class="button-cover carousel-icons"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></button>
+                <!--                 social science carousel -->
+                <div class="owl-carousel owl-theme owl-loaded owl-social owl-customize">
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/introToPsycology.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Introduction To Psycology</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/buddism.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Buddism and Modern Psycology</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+                            <img src="../static/images/lifeOfHappiness.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">A Life of Happiness And Fulfillment</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/psycology.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Psycological first AID</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/game-theory.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Game Theory</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/economics.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Introduction to Economics</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+                            <img src="../static/images/python-machine.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Learn Python</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="catologue">
+            <!--           carousel header -->
+            <h3 class="course-title">Financial And Marketing</h3>
+            <!--             carousel Next and prev buttons -->
+            <div class="course-carousel"> <button id="financePrevBtn" class="button-cover carousel-icons"><i class="fa fa-angle-left fa-5x fa-carousel" aria-hidden="true"></i></button>
+                <button id="financeNextBtn" class="button-cover carousel-icons"><i class="fa fa-angle-right fa-5x" aria-hidden="true"></i></button>
+                <!--                financial and marketing carousel -->
+                <div class="owl-carousel owl-theme owl-loaded owl-finance owl-customize">
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/trading.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Bussiness And Financial Modeling</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/investment-management.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Investment Management</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/healthcareAndManagement.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Healthcare And Marketplace</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/tradingStratagies.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Trading Stratagies in Emerging Markets</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/fianancial-management.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Financial Management</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/entreprenuer.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Entrepreneurship</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="data-catologue">
+
+                            <img src="../static/images/Corporate-Finance-management.jpg" class="background-catologue" alt="">
+                            <h4 class="data-title">Introduction To Corporate Finance</h4>
+                            <p class="catologue-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum architecto cumque hic vero molestias harum magni sint sapiente nam sequi commodi, voluptates nihil fugit i!</p>
+                            <button class="enrollment">Enroll</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="feature">
+            <div id="feature-title-cover">
+                <!--               feature header -->
+                <p id="feature-title">Benefits</p>
+            </div>
+            <div id="feature-border">
+                <div class="feature_box">
+                    <img src="../static/images/interactive-home.jpeg" class="dipper" alt="">
+
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam molestiae quasi optio consequuntur recusandae illo nisi, itaque animi a saepe. magnam numquam eligendi porro voluptatum!</p>
+                </div>
+                <div class="feature_box">
+
+
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quam molestiae quasi optio consequuntur recusandae illo nisi, itaque animi Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, vero dolore assumenda fugit! Adipisci maiores </p>
+
+                    <img src="../static/images/kids-girl-pencil-drawing-159823.jpeg" alt="" class="dipper">
+
+                </div>
+                <div class="feature_box">
+                    <img src="../static/images/algorithm.jpg" alt="" class="dipper">
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita sequi labore alias dolorem neque suscipit illum quisquam veritatis officiis aperiam ducimus praesentium voluptate qui, quas architecto, incidunt quod. Ut, deleniti, voluptatibus!</p>
+                </div>
+                <div class="feature_box">
+                    <p class="feature-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae accusamus facere dolores dolor quod, cumque quam praesentium reiciendis illum ut doloribus consectetur, rerum, earum ea? Molestias tenetur impedit illo voluptatibus!</p>
+                    <img src="../static/images/kids-girl-pencil-drawing-159823.jpeg" class="dipper" alt="">
+                </div>
+            </div>
+        </div>
+        <!--        footer -->
+        <footer>
+            <div class="footer-social">
+                <h5 id="social-networks">Contact-Us :</h5>
+                <ul>
+                    <li><a href="#"><i class="fa fa-whatsapp" aria-hidden="true"></i> &nbsp;Whatsapp-Number : 080 - 23214782</a></li>
+                    <li><a href="https://plus.google.com/106209460641172836485"><i class="fa fa-google-plus" aria-hidden="true"></i>&nbsp;Google-plus</a> </li>
+                    <li>
+                        <a href="https://www.linkedin.com/feed/"> <i class="fa fa-linkedin" aria-hidden="true"></i>&nbsp;Linked In</a>
+                    </li>
+                    <li><a href="https://www.facebook.com/navaneeth.nagesh"><i class="fa fa-facebook-square" aria-hidden="true"></i>&nbsp;Facebook</a> </li>
+                    <li><a href="https://twitter.com/navaneethnagesh"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitter</a> </li>
+                    <li><a href="https://www.instagram.com/navaneeth_nagesh/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i>&nbsp; Instagram</a> </li>
+                </ul>
+            </div>
+            <summary id="copyright">Copyright &copy; 2017 E-Learning. All rights reserved. VAT no. IT 0000000000</summary>
+        </footer>
+    </div>
+    <!--    login box -->
+    <div id="login" class="form_modal">
+
+        <form class="modal-content animate_login" action="#" method="post">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('login').style.display='none'" class="close" title="Close">&times;</span>
+                <img src="../static/images/login_avatar.png" alt="Avatar" class="avatar">
+            </div>
+
+            <div class="login_container">
+                <label id="login-user"><strong>Username</strong></label>
+                <input type="text" class="input_modal" placeholder="Enter Username" name="uname" required>
+
+                <label id="login-psw"><strong>Password</strong></label>
+                <input type="password" class="input_modal" placeholder="Enter Password" name="psw" required>
+
+                <button type="submit" class="submitBtn">Login</button>
+                <div class="login_link">
+                    <input type="checkbox" checked="checked" class="remember-me"> Remember me
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!--    sign up box -->
+    <div id="signup" class="form_modal">
+        <form class="modal-content animate_login" action="">
+            <div class="imgcontainer">
+                <span onclick="document.getElementById('signup').style.display='none'" class="close" title="Close">&times;</span>
+                <h2 id="signup-header">Sign Up</h2>
+
+            </div>
+
+
+            <div class="login_container">
+
+                <div id="signupnames">
+                    <input type="text" placeholder="First Name" class="signupName_modal" required>
+
+                    <input type="text" placeholder="Last Name" class="signupName_modal" required></div>
+
+                <input type="text" class="signup_modal" placeholder="username" name="uname" required>
+
+                <input type="email" placeholder="Email Address" id="emailAddress" class="signup_modal" required>
+
+
+                <input type="password" placeholder="Password" class="signup_modal" required>
+
+                <input type="password" placeholder="Confirm Password" class="signup_modal" required>
+
+
+                <button type="submit" class="registerBtn">Register</button>
+            </div>
+        </form>
+
+
+    </div>
+
+
+    <!--    Ajax API-->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--    Waypoints-->
+    <script src="../static/js/jquery.waypoints.min.js"></script>
+    <!--    owl carousel script -->
+    <script src="../static/OwlCarousel-plugins/owl.carousel.min.js"></script>
+    <!--    linking javascipts-->
+    <script src="../static/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
